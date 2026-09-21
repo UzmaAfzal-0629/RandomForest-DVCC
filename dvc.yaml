@@ -1,0 +1,14 @@
+stages:
+  train:
+    cmd: python train.py
+    deps:
+      - train.py
+      - data/dataset.csv
+    params:
+      - model.n_estimators
+      - model.max_depth
+      - model.min_samples_split
+      - model.min_samples_leaf
+      - model.random_state
+    metrics:
+      - metrics.json
