@@ -13,13 +13,13 @@ stages:
       size: 1652
     params:
       params.yaml:
-        model.max_depth: 10
-        model.min_samples_leaf: 1
-        model.min_samples_split: 2
-        model.n_estimators: 100
+        model.max_depth: 3
+        model.min_samples_leaf: 5
+        model.min_samples_split: 10
+        model.n_estimators: 20
         model.random_state: 42
     outs:
     - path: metrics.json
       hash: md5
-      md5: b78f62fdb4e4ea4cc1be634cef4b7c1c
-      size: 143
+      md5: d4e0122efc440a08ea33db98beec834f
+      size: 145
