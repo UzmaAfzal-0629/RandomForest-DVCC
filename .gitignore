@@ -1,5 +1,11 @@
+
 venv/
+.env
 .DS_Store
 __pycache__/
 *.pyc
-/metrics.json
+.pytest_cache/
+.ipynb_checkpoints/
+.dvc/tmp/
+models/
+metrics.json
