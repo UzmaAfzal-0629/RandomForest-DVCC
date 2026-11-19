@@ -1,3 +1,4 @@
+
 stages:
   train:
     cmd: python train.py
@@ -5,10 +6,10 @@ stages:
       - train.py
       - data/dataset.csv
     params:
-      - model.n_estimators
-      - model.max_depth
-      - model.min_samples_split
-      - model.min_samples_leaf
-      - model.random_state
+      - model
+      - data
+    outs:
+      - models/random_forest.joblib
     metrics:
-      - metrics.json
+      - metrics.json:
+          cache: false
